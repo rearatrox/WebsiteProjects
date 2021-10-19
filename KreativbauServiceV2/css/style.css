@@ -1,0 +1,415 @@
+
+
+  .scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+.back-to-top i {
+  color: black;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: rgba(60, 60, 60, 0.8);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, rgba(50,50,0,1), rgb(255,255,255));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgba(170,170,170,1), rgb(255,255,255));
+}
+
+      /* === Größen === */
+
+      h1 {
+        font-size:3rem;
+        color: rgba(33,33,33,1);
+      }
+
+      h4 {
+        color: rgba(255,255,255,0.87);
+      }
+      h5 {
+        color: white;
+      }
+      p {
+        font-size: 1.5rem;
+        color: rgba(255,255,255,0.87);
+      }
+
+      /* === Generelles === */
+
+      body {
+        font-family: 'Roboto';
+      }
+
+      .link-white {
+        color:white;
+      }
+      .seitenAbschnitt {
+        min-height: 500px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      .light {
+        background-color: rgba(255,255,255,1);
+        transition: all 0.3s ease-in-out;
+      }
+      .darker-light {
+        background-color: rgba(230,230,230,1);
+      }
+
+      .red {
+        background-color: rgb(160, 13, 30);
+      }
+
+      .dark {
+        background-color: rgba(33,33,33,1);
+      }
+
+      .transparent {
+        background-color: rgba(0,0,0,0.0);
+        transition: all 0.3s ease-in-out;
+
+      }
+      .schatten-navbar {
+        box-shadow: 0px 2px 25px  rgba(33,33,33,1);
+      }
+
+
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgb(160, 13, 30);
+      }
+
+      /* === Navigationsleiste === */
+        .navbar{
+          padding-top: 0;
+          padding-bottom: 0;
+          min-height: 75px;
+        }
+
+        .nav-link {
+          border-bottom: 4px solid rgb(20,20,20,0);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-nav > li > a {
+          font-size: 1.2rem;
+          color: rgba(33,33,33,1)!important;
+        }
+
+        .nav-link:hover {
+          border-bottom: 4px solid rgb(160, 13, 30);
+          transition: all 0.3s ease-in-out;
+
+        }
+
+        .navbar-nav > li {
+            padding-left: 1.8rem;
+        }
+
+        .navbar-brand{
+          font-size: 1.5rem;
+        }
+
+        #MailIcon {
+          position: absolute;
+          right:1rem;
+          bottom: 1rem;
+        }
+
+
+        /* === Background First Look*/
+        #intro {
+          background: url("img/Maler-bg.jpg");
+          height:100vh;
+          background-size: cover;
+        }
+
+        #intro h1 {
+            font-size:4rem;
+            color: rgba(255,255,255,0.87);
+            font-weight: bolder;
+        }
+
+        .mask {
+          height:100vh;
+          background-color: rgba(0,0,0,0.3);
+          /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(40, 40,40, 1));
+          /*background-image: url("../img/Wave-10s-1920px (3).svg");
+          background-size: cover;*/
+        }
+
+        .mask-svg-unten {
+         background-image: url("img/wave.svg");
+          background-size: cover;
+
+        }
+
+
+        .mask-svg-oben {
+         background-image: url("img/Wave_oben.svg");
+          background-size: cover;
+        }
+
+        /* === Foto-Slider === */
+
+        #headerCarousel, .carousel-item {
+            height: 800px;
+        }
+        .carousel-item img {
+            min-width: 100%;
+            height: 800px;
+            overflow: hidden;
+        }
+
+        .carousel .carousel-indicators li {
+          background-color: #fff;
+          background-color: rgba(160,13,30,0.7);
+        }
+
+        .carousel .carousel-indicators .active {
+          background-color: #a00d1e;
+        }
+
+        .carousel-control-next-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a00d1e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+
+        .carousel-control-prev-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a00d1e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        .carousel-caption h1, .carousel-caption p, .carousel-caption a{
+            color: #181818;
+        }
+
+        /* === Das Team-Bereich === */
+        #über-uns .rounded-circle {
+          max-width: 15rem; max-height: 15rem; margin-top:2rem;margin-bottom:2rem;
+        }
+
+        #über-uns h1 {
+            font-size:4rem;
+            color: rgb(33,33,33);
+            font-weight: bolder;
+        }
+
+        #über-uns h4 {
+          color: rgb(33,33,33);
+        }
+
+        #über-uns h5 {
+          color: rgba(33,33,33,.5);
+        }
+
+        #über-uns p {
+          color: rgb(33,33,33);
+          padding-top:2rem;
+          font-size: 1.2rem;
+          font-weight: lighter;
+        }
+
+        #über-uns img {
+          box-shadow: 0px 10px 25px rgb(33,33,33);
+        }
+
+        /* === Service Bereich === */
+        .fas {
+          color: rgb(160, 13, 30);
+        }
+        #fas-schwarz {
+          color: rgb(33,33,33)
+        }
+
+        #leistungen h3 {
+            font-size:2.5rem;
+            color: rgb(33,33,33);
+            font-weight: bolder;
+        }
+
+        #leistungen h1 {
+          font-size:4rem;
+          color: rgb(33,33,33);
+          font-weight: bolder;
+        }
+        #leistungen p {
+            font-size: 1.8rem;
+            color: rgb(33,33,33);
+            font-weight: lighter;
+        }
+
+        #leistungen ul {
+          font-size: 1.6rem;
+        }
+
+        @media (max-width:1208px) {
+          #leistungen h3 {
+              font-size:2.3rem;
+              color: rgb(33,33,33);
+              font-weight: bolder;
+          }
+
+          #leistungen h1 {
+            font-size:3.8rem;
+            color: rgb(33,33,33);
+            font-weight: bolder;
+          }
+          #leistungen p {
+              font-size: 1.6rem;
+              color: rgb(33,33,33);
+              font-weight: lighter;
+          }
+
+          #leistungen ul {
+            font-size: 1.4rem;
+          }
+        }
+
+        /* === Kontakt-Bereich nach Maler-Abschnitt === */
+
+        #MalerNachfrage p {
+          font-size: 1.6rem;
+          color: rgb(255,255,255);
+          padding-top: 4rem;
+          padding-bottom: 2rem;
+        }
+
+        #MalerNachfrage a {
+          font-size: 1.4rem;
+          color:white;
+          font-weight: lighter;
+          margin-bottom: 4rem;
+          background-color: rgb(235, 19, 44);
+        }
+
+        /* === Portfolio Fassaden === */
+
+        #PortfolioFassade p {
+          font-size: 1.8rem;
+          color: rgb(33,33,33);
+          font-weight: lighter;
+        }
+
+        #PortfolioFassade h3 {
+          font-size:3rem;
+          color: rgb(33,33,33);
+          font-weight: bolder;
+        }
+
+
+        #lackieren {
+          background: url("img/Lackieren-bg.jpeg");
+          background-size: cover;
+        }
+
+        /* === FAQ === */
+
+        .accordion-section .panel-default > .panel-heading {
+            border: 0;
+            background: rgba(255,255,255,0.5);
+            padding: 0;
+        }
+        .accordion-section .panel-default .panel-title a {
+            display: block;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: rgba(33,33,42,1);
+        }
+        .accordion-section .panel-default .panel-title a:after {
+            font-family: 'Font Awesome 5 Free';
+            font-style: normal;
+            font-size: 3rem;
+            font-weight: 900;
+            content: "\f106";
+            color: rgba(33,33,42,1);
+            float: right;
+            margin-top: -12px;
+        }
+        .accordion-section .panel-default .panel-title a.collapsed:after {
+            content: "\f107";
+        }
+        .accordion-section .panel-default .panel-body {
+            font-size: 1.3rem;
+        }
+
+        #AbsatzFAQ {
+          font-size:1.5rem;
+        }
+
+
+
+        /* === Kontakt === */
+
+        #kontakt h2 {
+          color: rgba(255,255,255,0.87);
+        }
+
+        #kontakt iframe{
+          height:310px;
+          width:100%;
+          }
+
+
+
+        /* === Impressum ===*/
+        #modalImpressum p,#modalImpressum h5{
+          color: rgba(33,33,42,1);
+        }
+
+        /* === Breakpoints === */
+        @media (max-width: 992px) {
+          #über-uns .rounded-circle {
+            max-width: 12rem;
+            max-height:12rem;
+          }
+
+          #MailIcon {
+            visibility: hidden;
+          }
+        }
+
+        @media (max-width: 768px) {
+          #über-uns .rounded-circle {
+            max-width: 10rem;
+            max-height:10rem;
+          }
+        }
+
+        @media (max-width: 575px) {
+          #über-uns .rounded-circle {
+            max-width: 15rem;
+            max-height:15rem;
+          }
+        }

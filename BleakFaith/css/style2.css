@@ -1,0 +1,176 @@
+
+/* === backgroundcolors === */
+
+.dark-bc {
+  background-color: rgba(0,0,0,1);
+  transition: all 0.3s ease-in-out;
+}
+
+#pinContainer {
+  width: 100%!important;
+  min-height: 100vh!important;
+}
+#pin2 {
+  width: 100%!important;
+  min-height: 100vh!important;
+}
+.panel {
+  padding-top:2rem;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.background {
+  background: url("../img/Background2.png");
+  background-size: cover;
+}
+
+.start {
+  padding-top: 12rem;
+}
+.white2 {
+  background-color: rgb(250,250,250);
+}
+.dark {
+  background-color: #262626;
+}
+.turqoise {
+  background-color: #38ced7;
+}
+.brown {
+  background-color: #a66f28;
+}
+
+.green {
+  background-color: green;
+}
+
+.bordeaux {
+  background-color: #953543;
+}
+
+.transparent {
+  background-color: rbga(255,255,255,0);
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+/* === Generelles === */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+    font-family: 'Montserrat Alternates'!important;
+}
+
+/* === HEADER === */
+
+    /* === Navigationsleiste === */
+    .navbar{
+      padding-top: 0;
+      padding-bottom: 0;
+      min-height: 75px;
+    }
+
+    .nav-link {
+      border-bottom: 4px solid rgb(20,20,20,0);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav > li > a {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,1)!important;
+    }
+
+    .navbar-nav > li > a.nav-link, a.navbar-brand {
+      margin-top: 0;
+    }
+
+    .transparent  li  a {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,1)!important;
+    }
+
+
+    .nav-link:hover {
+      border-bottom: 4px solid rgb(237, 28, 35);
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    .navbar-nav > li {
+        padding-left: 1.8rem;
+    }
+
+    .navbar-brand{
+      font-size: 1.5rem;
+    }
+
+    .schatten-navbar {
+      box-shadow: 0px 2px 25px  rgba(35,31,32,1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* === Banner === */
+    #myVideo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-height: 100%;
+      min-width:100%;
+    }
+
+    #FirstBanner {
+      position: relative;
+      background: url("img/Titelbild.png");
+      height:100vh;
+      background-size: cover;
+    }
+
+    #title1, #title2{
+      color: rgba(255,255,255,1);
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+
+    span {
+       width: 100%;
+       background: red;
+       display: block;
+       height: 5px;
+       margin-top: 20px;
+    }
+
+    #journey, #updateInfo {
+      color:white;
+      font-size: 1.6rem;
+      margin-top: 2rem;
+    }
+
+    a{
+      color:white;
+      font-size: 1.6rem;
+      margin-top: 2rem;
+    }
+
+    #details1 {
+      padding-top: 1rem;
+    }
+
+/* === MAIN === */
+
+    /* === Section 1 === */
+
+    .sticky1 {
+      position: relative;
+      padding-top: 0rem;
+    }

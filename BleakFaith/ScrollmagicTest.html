@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- AOS Plugin -->
+    <link rel="stylesheet" href="aos plugin/css/styles.css" />
+    <link rel="stylesheet" href="aos plugin/css/aos.css" />
+
+    <!-- CSS Datei -->
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Header Website-->
+    <header>
+      <!-- Navbar -->
+      <nav class="transparent navbar navbar-expand-lg navbar-light fixed-top" z-index="100">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/BleakFaithLogo.png" width="50" height="50" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarMain">
+              <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="aktuelles.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="projekte.html">Placeholder1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="veranstaltungen.html">Placeholder2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="chronik.html">Placeholder3</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="kontakt.html">Placeholder4</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="spende.html">Placeholder5</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#modalImpressum" data-toggle= "modal">Impressum</a>
+                  </li>
+              </ul> -->
+          </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
+
+    <div id="pinContainer">
+    	<section class="panel start brown ">
+        <video autoplay muted loop id="myVideo">
+          <source src="img/BleakFaithVideo.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-sm-12">
+              <h1 id="title1">BLEAK FAITH:</h1>
+              <h1 id="title2">FORSAKEN</h1>
+              <span></span>
+              <h2 id="journey"><a target="_blank" href="https://store.steampowered.com/app/1173220/Bleak_Faith_Forsaken/">
+                NOW ON STEAM - PUT IT ON YOUR WISHLIST!
+              </a></h2>
+              <h2 id="updateInfo">
+                Our website is being revised temporarily!
+              </h2>
+              <h2 style="color:rgba(0,0,0,0);"id="placeholder">hi</h2>
+            </div>
+          </div>
+        </div>
+    	</section>
+    	<section id = "panel2" class="panel background swipe1">
+        <div class="container ">
+          <div class="row text-center">
+            <div class="col-sm-12">
+              <h1 id="title3">LIBRARY</h1>
+              <div class="my-2" id="details1">
+                <div class="row text-center-align-items-center">
+                  <div class="col-sm-4 ">
+                    <img id="img1" src="img/Library1.png" alt="" class="img-thumbnail rounded mb-4 shadow">
+                    <img id="img4" src="img/Library2.png" alt="" class="img-thumbnail rounded mb-4 shadow">
+                    <img id="img7" src="img/Library3.png" alt="" class="img-thumbnail rounded mb-4 shadow">
+
+                  </div>
+                  <div class="col-sm-4">
+                    <img id="img2" src="img/Library4.jpg" alt="" class="img-thumbnail rounded mb-4 shadow">
+                    <img id="img5" src="img/Library5.jpg" alt="" class="img-thumbnail rounded mb-4 shadow">
+                    <img id="img8" src="img/Library6.png" alt="" class="img-thumbnail rounded mb-4 shadow">
+
+                  </div>
+                  <div class="col-sm-4">
+                    <img id="img3" src="img/Library7.png" alt="" class="img-thumbnail rounded mb-4 shadow">
+                    <img id="img6" src="img/Library8.jpg" alt="" class="img-thumbnail rounded mb-4 shadow">
+                    <img id="img9" src="img/Library9.jpg" alt="" class="img-thumbnail rounded mb-4 shadow">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    	</section>
+    	<!-- <section class="panel green">
+    		<b>THREE</b>
+    	</section>
+    	<section class="panel bordeaux">
+    		<b>FOUR</b>
+    	</section> -->
+    </div>
+
+    <div id="pin2">
+      <section id="panel3" class = "panel green">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+                <h1>Diese Box ist nicht Teil vom Sliding!</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="panel4" class="panel brown">
+    		<b>THREE</b>
+    	</section>
+    	<section id="panel5" class="panel bordeaux">
+    		<b>FOUR</b>
+    	</section>
+    </div>
+
+
+    <script>
+      $(function () {
+      var wipeAnimation = new TimelineMax()
+      var controller = new ScrollMagic.Controller();
+      wipeAnimation.from("#title1", 1, {x:150, opacity: 0});
+      wipeAnimation.from("#title2", 1, {x:-150, opacity: 0});
+      wipeAnimation.from("span", 1, {width:0}, "=-1");
+      wipeAnimation.from("#journey", 1, {y:-50, opacity: 0});
+      wipeAnimation.from("#updateInfo", 1, {y:50, opacity: 0});
+      wipeAnimation.from("#placeholder", 1, {y:50, opacity: 0});
+      wipeAnimation.fromTo("#panel2", 0.8, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+      /*=== Let Start Things disappear === */
+      wipeAnimation.to("#title1", 1, {x:150, opacity: 0},"-=1");
+      wipeAnimation.to("#title2", 1, {x:-150, opacity: 0}, "-=1");
+      wipeAnimation.to("span", 1, {width:0}, "-=1");
+      wipeAnimation.to("#journey", 1, {y:-50, opacity: 0}, "-=1");
+      wipeAnimation.to("#updateInfo", 1, {y:50, opacity: 0}, "-=1");
+      wipeAnimation.to("#placeholder", 1, {y:50, opacity: 0}, "-=1");
+
+      /*=== End disappear === */
+      wipeAnimation.from("#title3", 1, {x:150, opacity: 0});
+      wipeAnimation.from("#img1", 1, {x:-150,y:-150, opacity: 0});
+      wipeAnimation.from("#img2", 1, {y:-150, opacity: 0});
+      wipeAnimation.from("#img3", 1, {x:150,y:-150, opacity: 0});
+      wipeAnimation.from("#img4", 1, {x:-150, opacity: 0});
+      wipeAnimation.from("#img5", 1, {opacity: 0});
+      wipeAnimation.from("#img6", 1, {x:150, opacity: 0});
+      wipeAnimation.from("#img7", 1, {x:-150,y:150, opacity: 0});
+      wipeAnimation.from("#img8", 1, {y:150, opacity: 0});
+      wipeAnimation.from("#img9", 1, {x:150,y:150, opacity: 0});
+      //create scene to pin and link animation
+      PanelSlide = new ScrollMagic.Scene({
+          triggerElement: "#pinContainer",
+          triggerHook: "onLeave",
+          duration: "700%"
+        })
+        .setPin("#pinContainer")
+        .setTween(wipeAnimation)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+
+      var wipeAnimation2 = new TimelineMax()
+      wipeAnimation2.fromTo("#panel4", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+      wipeAnimation2.fromTo("#panel5", 2, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+      //create scene to pin and link animation
+      PanelSlide2 = new ScrollMagic.Scene({
+          triggerElement: "#pin2",
+          triggerHook: "onLeave",
+          duration: "400%"
+        })
+        .setPin("#pin2")
+        .setTween(wipeAnimation2)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+
+
+      // wipeAnimation.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+      // wipeAnimation.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+
+
+      });
+
+    </script>
+
+    <!-- <script>
+  	$(function () { // wait for document ready
+      function two() {
+        var wipeAnimation = new TimelineMax()
+        var controller = new ScrollMagic.Controller();
+
+        wipeAnimation.fromTo("section.panel.start.brown", 1, {x: "0%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+        wipeAnimation.fromTo("section.panel.turqoise.swipe1", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+        wipeAnimation.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+        wipeAnimation.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+
+        //create scene to pin and link animation
+        PanelSlide = new ScrollMagic.Scene({
+            triggerElement: "#pinContainer",
+            triggerHook: "onLeave",
+            duration: "800%"
+          })
+          .setPin("#pinContainer")
+          .setTween(wipeAnimation)
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+      };
+      function one() {
+        var controller = new ScrollMagic.Controller();
+    		// define movement of panels
+        var tl = new TimelineMax()
+        tl.from("#title1", 1, {x:150, opacity: 0});
+        tl.from("#title2", 1, {x:-150, opacity: 0});
+        tl.from("span", 1, {width:0}, "=-1");
+        tl.from("#journey", 1, {y:-50, opacity: 0});
+        tl.from("#updateInfo", 1, {y:50, opacity:0});
+        StartScene = new ScrollMagic.Scene({
+            triggerElement: ".sticky1",
+            triggerHook: "onLeave",
+                        offset: 100,
+            duration: "100%"
+          })
+          .setPin(".sticky1")
+          .setTween(tl)
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+          alert("Eins!");
+      };
+
+      two();
+      one();
+
+    });
+
+</script> -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- AOS-Plugin Initialisierung -->
+    <script src="aos plugin/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sin",
+        duration: "750"
+      });
+    </script>
+
+    <script type="text/javascript">
+
+    //Navigationsleiste zwischen transparent und dark wechseln
+
+    document.addEventListener("DOMContentLoaded", function(){
+      el_farbeÄndern = document.querySelector('.navbarAnimiert');
+
+      if(el_farbeÄndern){
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function() {
+              // let höhe = window.innerHeight;
+              let höhe = 0;
+
+              let scroll_top = window.scrollY;
+             if(scroll_top > höhe) {
+                  el_farbeÄndern.classList.remove('hidden');
+                  el_farbeÄndern.classList.add('dark-bc');
+                  el_farbeÄndern.classList.add('schatten-navbar');
+
+              }
+              else {
+                  el_farbeÄndern.classList.add('hidden');
+                  el_farbeÄndern.classList.remove('dark-bc');
+                  el_farbeÄndern.classList.remove('schatten-navbar');
+
+              }
+              last_scroll_top = scroll_top;
+        });
+        // window.addEventListener
+      }
+      // if
+
+    });
+    // DOMContentLoaded  end
+
+    </script>
+  </body>
+</html>
