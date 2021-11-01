@@ -43,7 +43,7 @@ body {
     background-size: cover;
     width: auto;
     height: 100vh;
-    filter: blur(2px);
+    filter: blur(0px);
     z-index: 1;
 }
 
