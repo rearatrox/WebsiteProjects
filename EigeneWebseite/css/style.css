@@ -1,0 +1,70 @@
+
+/* === GENERELLES === */
+:root {
+    --NavbarFarbe: rgb(255, 255, 255);
+    --primaryFarbe: rgb(12, 152, 218);
+    --primaryFarbeTransparent: rgba(12, 152, 218, 0.6);
+    --secondaryFarbe: rgb(14, 175, 250);
+    --transparent: rgba(0,0,0,0);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}
+  
+
+
+/* === NAVIGATIONSLEISTE === */
+
+.navbar {
+    background-color: var(--NavbarFarbe);
+}
+
+
+.navbar li {
+    border-bottom: 2px var(--NavbarFarbe) solid;
+}
+
+
+.navbar li:hover {
+    border-bottom: 2px var(--primaryFarbe) solid;
+}
+
+.navbar span {
+    color: 	var(--primaryFarbe);
+}
+
+/* === HOME === */
+
+#Banner {
+    background: url(img/Titelbild.jpg);
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    filter: blur(2px);
+    z-index: 1;
+}
+
+#Banner .col-sm-12 {
+    backdrop-filter: blur(2px);
+}
+
+#test {
+    background-color: var(--secondaryFarbe);
+    box-shadow: 3px 23px 47px -4px rgba(0,0,0,0.75);
+}
+
+#Willkommen {
+    background-color: var(--primaryFarbe);
+}
+
+
+
+ /* Medium devices (tablets, 768px and up) */
+/* @media (max-width: 768px) { 
+    #Banner {
+        height: 350px; 
+    }
+} */
