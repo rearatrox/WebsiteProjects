@@ -13,13 +13,19 @@ body {
     font-size: 1.2rem;
     color: black;
 }
+
+.blurr {
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.1);  
+}
   
 
 
 /* === NAVIGATIONSLEISTE === */
 
 .navbar {
-    background-color: var(--NavbarFarbe);
+    background-color: var(--transparent);
 }
 
 
@@ -43,8 +49,6 @@ body {
     background-size: cover;
     width: auto;
     height: 100vh;
-    filter: blur(0px);
-    z-index: 1;
 }
 
 #Banner .col-sm-12 {
