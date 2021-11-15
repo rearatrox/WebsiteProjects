@@ -3,7 +3,7 @@
 :root {
     --NavbarFarbe: rgb(255, 255, 255);
     --primaryFarbe: rgb(12, 152, 218);
-    --primaryFarbeTransparent: rgba(12, 152, 218, 0.6);
+    --primaryFarbeTransparent: rgba(12, 152, 218, 0.4);
     --secondaryFarbe: rgb(14, 175, 250);
     --transparent: rgba(0,0,0,0);
 }
@@ -15,9 +15,9 @@ body {
 }
 
 .blurr {
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    background-color: rgba(0, 0, 0, 0.1);  
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: var(--primaryFarbeTransparent);  
 }
   
 
