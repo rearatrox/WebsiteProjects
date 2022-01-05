@@ -4,28 +4,49 @@
     --NavbarFarbe: rgb(255, 255, 255);
     --primaryFarbe: rgb(12, 152, 218);
     --primaryFarbeTransparent: rgba(12, 152, 218, 0.4);
-    --secondaryFarbe: rgb(14, 175, 250);
+    --secondaryFarbe: rgb(39, 170, 231);
     --transparent: rgba(0,0,0,0);
+    --schwarz: rgb(0,0,0);
 }
 
+.primaryFarbe {
+    background-color: rgb(12, 152, 218);
+}
+
+.secondaryFarbe {
+    background-color: rgb(39, 170, 231);
+}
+
+
+
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
     color: black;
 }
 
 .blurr {
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    background-color: var(--primaryFarbeTransparent);  
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    background-color: var(--secondaryFarbe);  
 }
   
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
 
 
 /* === NAVIGATIONSLEISTE === */
 
 .navbar {
     background-color: var(--NavbarFarbe);
+    min-height: 100px;
 }
 
 
@@ -45,7 +66,7 @@ body {
 /* === ÜBER MICH === */
 
 #Background {
-    background: url(img/Titelbild.jpg);
+    background: url(img/Background.png);
     background-size: cover;
     width: auto;
     height: 100vh;
