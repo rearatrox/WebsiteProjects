@@ -72,6 +72,17 @@ body {
     color: 	var(--primaryFarbe);
 }
 
+#BerufNavbar {
+    font-family: 'Nunito', 'Lato', sans-serif; 
+    font-size: 1.2rem; 
+    color: rgb(0, 0, 0)
+}
+#NameNavbar {
+    font-family: 'Poppins', 'Lato', sans-serif; 
+    font-size: 1.8rem;
+    font-weight:bolder; 
+    color: rgb(0, 0, 0);
+}
 /* === ÜBER MICH === */
 
 #Background {
@@ -139,6 +150,12 @@ input {
     text-indent: 0px;
 }
 
+.kontaktform {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 70%;
+}
+
 /* === LEBENSLAUF === */
 
 #Background-Lebenslauf {
@@ -178,6 +195,28 @@ input {
     color: black;
 }
 
+.btn-download {
+    text-align: right;
+    margin-top: 13rem;
+}
+.Arbeitserfahrung-Text {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    visibility: hidden;
+}
+
+@media (max-width: 1199px) {
+    .kontaktform {
+        max-width: 80%; 
+    }
+    
+
+}
+
 
 /* === Queries === */
 @media (max-width: 991.98px) {
@@ -197,6 +236,36 @@ input {
     #FirstWord {
         font-size: 5rem;
     }
+
+
+
+    /* === KONTAKT === **/
+    .kontaktform {
+        margin-left: auto;
+        margin-right: auto; 
+        max-width: 80%;
+    }
+
+    /* === LEBENSLAUF === */
+    .Beschreibung {
+        font-size: 1.2rem;
+    }
+
+    .Kompetenzen {
+        font-size: 1.6rem;
+        color: black;
+    }
+    
+    .Amateur, .Fortgeschritten, .Profi {
+        font-size: 1.4rem;
+        color: black;
+    }
+
+    hr {
+        visibility:visible;
+    }
+
+
 }
 
 @media (max-width: 767.98px) {  
@@ -228,11 +297,37 @@ input {
     div.form-group > div.row > div.col-md-6:nth-child(2) {
         padding-top: 3rem;
     }
+    .kontaktform {
+        margin-left: auto;
+        margin-right: auto; 
+        max-width: 100%;
+    }
+    .btn-download {
+        text-align: center;
+        margin-top: 0rem;
+    }
+    .Arbeitserfahrung-Text {
+        text-align: center;
+    }
+
+    hr {
+        visibility:visible;
+    }
 }
 
 
 @media (max-width: 575.98px) {
+    #BerufNavbar {
+        visibility: hidden;
+        font-size: .2rem;
+    }
+    #NameNavbar {
+        font-size: 1.4rem;
+    }
 
+    hr {
+        visibility:visible;
+    }
 }
 
 
