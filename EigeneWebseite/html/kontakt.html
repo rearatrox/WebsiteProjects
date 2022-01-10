@@ -31,13 +31,13 @@
     <!-- CSS Datei -->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <title>Startseite | ANLO</title>
+    <title>Kontakt</title>
   </head>
   <body>
     <header>
         <!-- Navigationsleiste -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <a class="navbar-brand " href="index.html">
+            <a class="navbar-brand " href="../index.html">
             <!-- <img src="../img/Antifalogo.svg" width="40px" height="auto"> -->
             <span id="NameNavbar">Tim Hauschild</span>
             <span id="BerufNavbar"> / DUALER STUDENT</span>
@@ -49,13 +49,13 @@
 
             <div class="collapse navbar-collapse " id="navbarMain" style="font-weight: bolder;">
                 <ul class="navbar-nav ml-auto" style="padding-right: 4rem;"> <!-- ml-auto => Navbarelemente rechts -->
-                    <li class="nav-item mx-3 active">
+                    <li class="nav-item mx-3 ">
                         <a class="nav-link" href="../index.html">Über mich</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="lebenslauf.html">Lebenslauf</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-3 active">
                         <a class="nav-link" href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
@@ -76,28 +76,28 @@
                 </div>
                 <div class=" row align-items-center kontaktform" >
                     <div class="col-sm-12" style="background-color: white; margin-top: 4rem; box-shadow: -6px 10px 32px -2px rgba(0,0,0,0.5);">
-                        <form action="test.php">
+                        <form id="KontaktFormular" action="../send_email.php" method="post">
                             <div class="container form-group">
                                 <div class="row mt-5">
                                     <div class="col-md-6">
                                         <label for="Vorname">Vorname <span style="color:tomato">*</span></label>
-                                        <input  type="Vorname" class="form-control form-boxen" id="Vorname" >
+                                        <input name="Vorname" type="Vorname" class="form-control form-boxen" id="Vorname" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="Nachname">Nachname <span style="color:tomato">*</span></label>
-                                        <input  type="Nachname" class="form-control form-boxen" id="Nachname">
+                                        <input name="Absender" type="Nachname" class="form-control form-boxen" id="Nachname" required>
                                     </div>
                                     <div class="col-sm-12 mt-5">
-                                        <label for="E-Mail">E-Mail <span style="color:tomato">*</span></label>
-                                        <input  type="email" class="form-control form-boxen" id="E-Mail" >
+                                        <label for="Email">E-Mail <span style="color:tomato">*</span></label>
+                                        <input  name="Email" type="email" class="form-control form-boxen" id="E-Mail" required>
                                     </div>
                                     <div class="col-sm-12 mt-5">
                                         <label for="Betreff">Betreff <span style="color:tomato">*</span></label>
-                                        <input  type="Betreff" class="form-control form-boxen" id="Betreff" >
+                                        <input  name="Betreff" type="Betreff" class="form-control form-boxen" id="Betreff" required>
                                     </div>
                                     <div class="col-sm-12 mt-5">
                                         <label for="Nachricht">Nachricht</label>
-                                        <textarea style="resize:none;"class="form-control form-boxen" id="Nachricht" rows="4"></textarea>
+                                        <textarea name="Nachricht" style="resize:none;"class="form-control form-boxen" id="Nachricht" rows="4"></textarea>
                                     </div>
                                     <div class="col-sm-12 mt-5 text-right mb-4">
                                        <button type="submit" class="btn btn-primary px-5">Absenden</button>
@@ -105,6 +105,7 @@
                                     
                                 </div>
                             </div>
+                            <input type="text" id="website" name="website"/>
                         </form>
 
                     </div>
@@ -116,6 +117,16 @@
     </main>
     <footer>
 
+        <div style="background-color: white;">
+            <div class="container">
+                <div class="row  text-center py-5">
+                    <div class="col-sm-12">
+                        <p>&copy; T. Hauschild 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
       </footer>
 
      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
