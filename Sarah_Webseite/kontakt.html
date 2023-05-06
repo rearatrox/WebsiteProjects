@@ -110,7 +110,9 @@
                             <label for="textareaNachricht">Deine Nachricht</label>
                             <textarea name="Nachricht" class="form-control" id="textareaNachricht" rows="5"></textarea>
                         </div>
-                        <button class="btn btn-dark" onclick="encryptMessage()" type="submit">Verschlüsseln &amp; Senden</button>
+                        <button class="btn btn-dark" onclick="encryptMessage()" type="button">Verschlüsseln</button>
+                        <button class="btn btn-dark" type="submit">Senden</button>
+
                     </form>
 
 
@@ -240,8 +242,8 @@ UDRi70TxBHC4xa/tcBKOCA==
               var encrypted = ciphertext.data;
               alert(encrypted);
               document.getElementById('textareaNachricht').value = encrypted;
-
               // Verschlüsselte Daten in das Textfeld schreiben
+              alert("Nachricht wird abgeschickt!");
             });
           }
         }
