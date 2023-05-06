@@ -36,55 +36,54 @@
   </head>
   <body>
 
-  <header>
-    <div class="mask-navbar">
+    <header>
       <!-- Navigationsleiste -->
-      <nav class="mask-navbar autohide farbeAnimiert navbar navbar-expand-lg navbar-light fixed-top schatten-navbar light" z-index="100">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/Antifalogo.svg" width="50" height="50" alt="">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse " id="navbarMain">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="aktuelles.html">Aktuelles</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projekte.html">Projekte</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="veranstaltungen.html">Veranstaltungen</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="chronik.html">Chronik</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="kontakt.html">Kontakt</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="spende.html">Spende</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#modalImpressum" data-toggle= "modal">Impressum</a>
-                  </li>
-              </ul>
-              <form id="search" method="get" action="suchen.php" class="form-inline">
-                <label for="suchbegriff"></label>
-                <input name="q" class="form-control mb-0 mr-sm-2" type="search" placeholder="Suchen..." aria-label="Search">
-                <button class="btn btn-light" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-          </div>
-      </nav>
-    </div>
-
+      <div class="mask-navbar"> 
+        <nav class="mask-navbar navbar navbar-expand-lg navbar-light fixed-top schatten-navbar light" z-index="100">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/Antifalogo.svg" width="50" height="50" alt="">
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse " id="navbarMain">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="aktuelles.html">Aktuelles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="veranstaltungen.html">Veranstaltungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chronik.html">Chronik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spende.html">Spende</a>
+                    </li>
+                    <li>
+  
+                    </li>
+                </ul>
+                <form id="search" method="get" action="suchen.php" class="form-inline">
+                  <label for="suchbegriff"></label>
+                  <input name="q" class="form-control mb-0 mr-sm-2" type="search" placeholder="Suchen..." aria-label="Search">
+                  <button id="suchbutton" class="btn btn-light" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+            </div>
+        </nav>
+      </div>
   </header>
-  <main id="twitter-bg" style="min-height:2000px;">
+
+  <!-- Main-Inhalt-->
+  <main id="twitter-bg">
+    <!-- Überschrift "Aktuellste Beiträge"-->
     <div class="transparent">
       <div class="container" id="willkommen" >
         <div class="row text-center align-items-center">
@@ -113,249 +112,112 @@
       </div>
     </div>
 
-    <div class="transparent mask-svg-unten">
-      <div class="container" id="willkommen">
-        <div class="row text-center align-items-center">
-          <div class="col-sm-12">
-            <div class="card text-center shadow-lg">
-              <h2 class="card-header">
-                Erstellen der Website
-              </h2>
-                <div class="card-body">
-                  <h4 class="card-title">Optional: Unter-Überschrift</h4>
-                  <p class="card-text">
+    <!-- ======================================================================================= -->
+    <!-- Hier den aktuellsten Artikel neu hinzufügen. Dazu alles ab dem Kommentar "BOX EINES ARTIKELS" bis zu "ENDE DER ARTIKELBOX" kopieren und einfügen-->
 
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                    nulla facilisi. Lorem ipsum dolor sit amet...
-
-                  </p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_0.html">Weiterlesen...</a>
-                </div>
-              <div class="card-footer text-muted">
-                29. Mai 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="transparent mask-svg-oben">
-      <div class="container" id="willkommen">
-        <div class="row text-center align-items-center">
-          <div class="col-sm-12">
-            <div class="card text-center shadow-lg">
-              <h2 class="card-header">
-                Erstellen der Website
-              </h2>
-                <div class="card-body">
-                  <h4 class="card-title">Optional: Unter-Überschrift</h4>
-                  <p class="card-text">
-
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                    nulla facilisi. Lorem ipsum dolor sit amet...
-
-                  </p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">Weiterlesen...</a>
-                </div>
-              <div class="card-footer text-muted">
-                29. Mai 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="transparent mask-svg-unten">
-      <div class="container" id="willkommen">
-        <div class="row text-center align-items-center">
-          <div class="col-sm-12">
-            <div class="card text-center shadow-lg">
-              <h2 class="card-header">
-                Erstellen der Website
-              </h2>
-                <div class="card-body">
-                  <h4 class="card-title">Optional: Unter-Überschrift</h4>
-                  <p class="card-text">
-
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                    nulla facilisi. Lorem ipsum dolor sit amet...
-
-                  </p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">Weiterlesen...</a>
-                </div>
-              <div class="card-footer text-muted">
-                29. Mai 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="transparent mask-svg-oben">
-      <div class="container" id="willkommen">
-        <div class="row text-center align-items-center">
-          <div class="col-sm-12">
-            <div class="card text-center shadow-lg">
-              <h2 class="card-header">
-                Erstellen der Website
-              </h2>
-                <div class="card-body">
-                  <h4 class="card-title">Optional: Unter-Überschrift</h4>
-                  <p class="card-text">
-
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                    nulla facilisi. Lorem ipsum dolor sit amet...
-
-                  </p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">Weiterlesen...</a>
-                </div>
-              <div class="card-footer text-muted">
-                29. Mai 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- === BOX EINES ARTIKELS ===-->
     <div class="transparent">
       <div class="container" id="willkommen">
         <div class="row text-center align-items-center">
           <div class="col-sm-12">
             <div class="card text-center shadow-lg">
+              <!-- TITEL DES ARTIKELS-->
               <h2 class="card-header">
-                Erstellen der Website
+                Naziaufmarsch am Chemnitzer Friedenstag
               </h2>
                 <div class="card-body">
-                  <h4 class="card-title">Optional: Unter-Überschrift</h4>
+                  <!-- Hier kommt der Teaser-Text rein-->
                   <p class="card-text">
 
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                    nulla facilisi. Lorem ipsum dolor sit amet...
-
+                    Am gestrigen Chemnitzer Friedenstag, an welchem sich die Bombardierung der Stadt jährte, 
+                    marschierten rechte Gruppierungen wie die „Freien Sachsen“ und die „Neuen Stärke“ in der Innenstadt auf 
+                    um ihren deutschen Opfermythos weiter aufzubauen. Dagegen formierte sich ein breiter Gegenprotest verschiedenster Bündnisse... 
                   </p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">Weiterlesen...</a>
+                  <!-- Bei "href" den Beitragspfad ändern -->
+                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_3.html">Weiterlesen...</a>
                 </div>
+                <!-- Datum-->
               <div class="card-footer text-muted">
-                29. Mai 2021
+                05. März 2022
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- ENDE DER ARTIKELBOX-->
 
+    <!-- === BOX EINES ARTIKELS ===-->
+     <div class="transparent">
+      <div class="container" id="willkommen">
+        <div class="row text-center align-items-center">
+          <div class="col-sm-12">
+            <div class="card text-center shadow-lg">
+              <!-- TITEL DES ARTIKELS-->
+              <h2 class="card-header">
+                Waffen- und Munitionsfund
+              </h2>
+                <div class="card-body">
+                  <!-- Hier kommt der Teaser-Text rein-->
+                  <p class="card-text">
+
+                    Nach einem Hilferuf aus einer privaten Wohnung auf der Georgstraße  fand die Polizei einen alkoholisierten Mann vor. 
+                    Bei der Betrachtung der Wohnung fanden die Beamt*innen ein Waffenarsenal sowie einen "Nazialtar" vor. 
+                    Insgesamt wurden mehrere verbotene Messer, Schlagringe [teils mit Klinge], ...
+                  </p>
+                  <!-- Bei "href" den Beitragspfad ändern -->
+                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_2.html">Weiterlesen...</a>
+                </div>
+                <!-- Datum-->
+              <div class="card-footer text-muted">
+                14. April 2021
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ENDE DER ARTIKELBOX-->
+
+    <!-- === BOX EINES ARTIKELS ===-->
     <div class="transparent">
       <div class="container" id="willkommen">
         <div class="row text-center align-items-center">
           <div class="col-sm-12">
             <div class="card text-center shadow-lg">
+              <!-- TITEL DES ARTIKELS-->
               <h2 class="card-header">
-                Erstellen der Website
+                Kundgebung gegen die AfD
               </h2>
                 <div class="card-body">
-                  <h4 class="card-title">Optional: Unter-Überschrift</h4>
+                  <!-- Hier kommt der Teaser-Text rein-->
                   <p class="card-text">
 
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                    nulla facilisi. Lorem ipsum dolor sit amet...
+                    Am Montag versuchte die AfD wiedereinmal durch die Instrumentalisierung einer Straftat
+                    ihre rassistischen Reden unter der Bevölkerung zu verbreiten.
+                    Dazu luden sie mehrer regionale AfD'ler, wie Nico Köhler und Dirk Eckardt ein.
+                    Aber auch Landtagsabgeordneter Volker Dringenberg (war angekündigt, allerdings
+                    scheinbar nicht erschienen) sowie Bundestagsabgeordneter Detlef Spangenberg und
+                    Michael Wittwer (aktiv bei Pro Chemnitz) waren vor Ort. Trotzdem konnten sie nicht
+                    mehr als 60 Leute für ihre Hetze gewinnen. Das Publikum bestanden vorwiegend aus
+                    Wutbürger:innen, jugendlichen Personen sowie den bekannten lokalen Neonazigesichtern...
 
                   </p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">Weiterlesen...</a>
+                  <!-- Bei "href" den Beitragspfad ändern -->
+                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_1.html">Weiterlesen...</a>
                 </div>
+                <!-- Datum-->
               <div class="card-footer text-muted">
-                29. Mai 2021
+                14. April 2021
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
+    <!-- ENDE DER ARTIKELBOX-->
+    <!-- Weiter unten muss nichts mehr angepasst werden-->
+    <!-- ======================================================================================= -->
 
 
   <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
@@ -363,14 +225,7 @@
   </main>
 
   <footer>
-    <div class="container-fluid mask-footer" style="min-height:200px;">
-      <div class="row">
-        <div class="col-sm-12">
-        </div>
-      </div>
-    </div>
-
-    <div class="" style="background-color: rgb(24, 24, 24)">
+    <div class="mt-5" style="background-color: rgb(24, 24, 24)">
         <div class="container">
             <div class="row text-white text-center py-5" id="footer">
                 <div class="col-sm-12">
@@ -380,7 +235,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
     <!-- Modal -->
     <div class="modal fade " id="modalImpressum" tabindex="-1" role="dialog" aria-labelledby="modalImpressumLabel" aria-hidden="false">
         <div class="modal-dialog" role="document">

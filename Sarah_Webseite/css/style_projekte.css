@@ -199,15 +199,14 @@ hr {
 }
 
 .mask-svg-unten {
- background-image: url("img/Wave_grau_unten.svg");
-  background-size: cover;
-
+  background-image: -webkit-linear-gradient(bottom, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(bottom, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
 }
 
 
 .mask-svg-oben {
- background-image: url("img/Wave_grau.svg");
-  background-size: cover;
+  background-image: -webkit-linear-gradient(top, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(top, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
 }
 
 .mask-svg-oben2 {
@@ -538,6 +537,39 @@ color: rgba(35,31,32,1);
   color: rgba(33,33,42,1);
 }
 
+
+
+/* === Beitragsformatierung === */
+
+.beitragabschnitt {
+  font-size: 1.4rem; 
+  padding: 1.5rem 0 0 0; 
+  margin:0;
+}
+
+.bild_beitrag{
+  height: 500px;
+  width: 100%;
+}
+
+.BeitragButtonLinks {
+  float:left; 
+ }
+ 
+ .BeitragButtonRechts {
+   float:right; 
+  }
+ 
+
+.pc {
+  visibility: visible;
+  display: inline-block;
+}
+
+.mobile {
+  display: none;
+}
+
 /* === Breakpoints === */
 @media (max-width: 992px) {
   #über-uns .rounded-circle {
@@ -561,5 +593,40 @@ color: rgba(35,31,32,1);
   #über-uns .rounded-circle {
     max-width: 15rem;
     max-height:15rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+  
+  .BeitragButtonLinks {
+    float:none;
+  }
+
+  .bild_beitrag{
+    max-height: 250px;
+    width: 100%;
+  }
+
+  .pc {
+    display: none;
+  }
+  .mobile {
+    visibility: visible;
+    display:inline-block;
+  }
+
+  #suchbutton {
+    display: none;
+  }
+
+  #search {
+    padding-left: 1.5rem;
+    max-width: 300px;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
   }
 }

@@ -31,8 +31,10 @@
 
     <!-- JavaScript Datei -->
     <link rel="text/javascript" href="../js/Skripte.js">
-
-    <title>Kundgebung gegen die AfD</title>
+    <!-- ======================================================================================= -->
+    <!-- Hier kommt der Titel rein, welcher im Internet-Tab angezeigt wird-->
+    <title>Kundgebung gegen die CDU</title>
+     <!-- ======================================================================================= -->
   </head>
   <body>
 
@@ -89,20 +91,24 @@
       <div class="container" id="willkommen" >
         <div class="row text-center align-items-center">
           <div class="col-sm-12">
+            <!-- ======================================================================================= -->
             <!-- Beitragsüberschrift -->
             <h1 style="padding-bottom: 2rem;">
-              Kundgebung gegen die AfD
+              Kundgebung gegen die CDU
             </h1>
             <!-- Ende der Überschrift -->
+            <!-- ======================================================================================= -->
           </div>
         </div>
         <div class="row  align-items-center">
         <!-- Hier fängt die Beitragspalte an -->
-          <div class="col-sm-12">
+          <div class="col-sm-12 ">
+            <!-- ======================================================================================= -->
             <!-- Hier wird das Foto hinzugefügt am Anfang des Beitrags-->
             <!-- Hier müsst ihr nur den Bildpfad ändern -->
-            <img src="../img/Bild_Beitrag_0.jpeg" width="100%" height="500px" alt="">
-
+            <img class="bild_beitrag" src="../img/Bild_Beitrag_1.jpg" alt="">
+            
+            <!-- ======================================================================================= -->
             <!-- Der folgende p-Abschnitt ist immer EIN Absatz -->
             <p class="beitragsabschnitt">
               Am Montag versuchte die AfD wiedereinmal durch die Instrumentalisierung einer Straftat
@@ -154,9 +160,14 @@
             <!-- Ende Abschnitt für das Datum-->
             <br>
             <br>
-            <a style="float:left;"data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light"href="Beitrag_0.html">Vorheriges Projekt</a>
-            <a style="float:right;"data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light"href="Beitrag_1.html">Nächstes Projekt</a>
-
+            <!-- ======================================================================================= -->
+            <!-- Hier das Attribut "href" anpassen, damit die Button auf den nächsten Beitrag zeigen-->
+            <!-- Falls es keinen nächsten Beitrag gibt, dann einfach den jetzigen Beitrag angeben-->
+            <a data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light BeitragButtonLinks pc" href="Beitrag_1.html">Vorheriger Beitrag</a>
+            <a data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light BeitragButtonLinks mobile" href="Beitrag_1.html"><</a>
+            <a data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light BeitragButtonRechts pc" href="Beitrag_2.html">Nächster Beitrag</a>
+            <a data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light BeitragButtonRechts mobile" href="Beitrag_2.html">></a>
+            <!-- ======================================================================================= -->
           </div>
         </div>
       </div>

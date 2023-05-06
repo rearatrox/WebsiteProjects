@@ -36,55 +36,56 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-    				          <p>Auf unserer Webseite werden keine Cookies benutzt.</p>
+    				          <p>Auf unserer Webseite werden keine Cookies benutzt. Es wird lediglich ein Cookie gesetzt, damit dieses Modal nicht immer bei einem Refresh der Seite auftaucht.</p>
                 </div>
             </div>
         </div>
     </div>
+
     <header>
       <!-- Navigationsleiste -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top light schatten-navbar mask-navbar" z-index="100">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/Antifalogo.svg" width="50" height="50" alt="">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse " id="navbarMain">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="aktuelles.html">Aktuelles</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projekte.html">Projekte</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="veranstaltungen.html">Veranstaltungen</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="chronik.html">Chronik</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="kontakt.html">Kontakt</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="spende.html">Spende</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#modalImpressum" data-toggle= "modal">Impressum</a>
-                  </li>
-              </ul>
-              <form id="search" method="get" action="suchen.php" class="form-inline">
-                <label for="suchbegriff"></label>
-                <input name="q" class="form-control mb-0 mr-sm-2" type="search" placeholder="Suchen..." aria-label="Search">
-                <button class="btn btn-light" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-          </div>
-      </nav>
+      <div class="mask-navbar"> 
+        <nav class="mask-navbar navbar navbar-expand-lg navbar-light fixed-top schatten-navbar light" z-index="100">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/Antifalogo.svg" width="50" height="50" alt="">
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse " id="navbarMain">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="aktuelles.html">Aktuelles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="veranstaltungen.html">Veranstaltungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chronik.html">Chronik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spende.html">Spende</a>
+                    </li>
+                    <li>
+  
+                    </li>
+                </ul>
+                <form id="search" method="get" action="suchen.php" class="form-inline">
+                  <label for="suchbegriff"></label>
+                  <input name="q" class="form-control mb-0 mr-sm-2" type="search" placeholder="Suchen..." aria-label="Search">
+                  <button id="suchbutton" class="btn btn-light" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+            </div>
+        </nav>
+      </div>
+  </header>
 
 
       <!-- Background image -->
@@ -94,7 +95,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="text-white">
-                  <h1 class="mb-3" data-aos="fade-zoom-in" data-aos-delay="750">Limbach-Oberfrohna</h1>
+                  <h1 class="mb-3" style="padding-top: 6rem;" data-aos="fade-zoom-in" data-aos-delay="750">Limbach-Oberfrohna</h1>
                   <h1 style="color: rgb(237, 28, 35);" class="mb-3" data-aos="fade-zoom-in" data-aos-delay="1500">Nazifrei!</h1>
                    <!-- <h5 class="mb-3" data-aos="fade-zoom-in" data-aos-delay="2250">Zitat oder guter Spruch?</h5> -->
                   <br>
@@ -121,7 +122,7 @@
 
 <main id="twitter-bg">
   <div class="transparent">
-    <div class="container-fluid mask-svg-oben2" style="min-height:200px;">
+    <div class="container-fluid mask-svg-oben2 pb-5">
       <div class="row">
         <div class="col-sm-12">
         </div>
@@ -169,28 +170,31 @@
               <li data-target="#headerCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
+              <!-- Erster Artikel im Slider -->
               <div class="carousel-item active">
-                <img class="d-block w-100" src="img/Bild_Beitrag_0.jpeg" alt="First slide">
+                <!-- Bild des ersten Artikel im Slider, bei "src" den Bildpfad ändern -->
+                <img class="d-block w-100" src="img/Bild_Beitrag_1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <!-- <h2>Kundgebung gegen die AfD</h2> -->
-                  <!-- <p>Kurze, prägnante Beschreibung</p> -->
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_0.html">MEHR</a>
+                  <!-- Bei "href" den Dateipfad ändern-->
+                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_1.html">MEHR</a>
                 </div>
               </div>
+              <!-- Zweiter Artikel im Slider -->
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://via.placeholder.com/1720x1080/4a4a4a/000000.jpg" alt="Second slide">
+                <!-- Bild des zweiten Artikel im Slider, bei "src" den Bildpfad ändern-->
+                <img class="d-block w-100" src="img/Bild_Beitrag_2.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2>Überschrift zum Geschehen</h2>
-                  <p>Kurze, prägnante Beschreibung</p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">MEHR</a>
+                  <!-- Bei "href" den Beitragspfad ändern-->
+                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_2.html">MEHR</a>
                 </div>
               </div>
+              <!-- Dritter Artikel im Slider -->
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://via.placeholder.com/1720x1080/4a4a4a/000000.jpg" alt="Third slide">
+                <!-- Bild des dritten Artikel im Slider, bei "src" den Bildpfad ändern -->
+                <img class="d-block w-100" src="img/Bild_Beitrag_3.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2>Überschrift zum Geschehen</h2>
-                  <p>Kurze, prägnante Beschreibung</p>
-                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="#kontakt">MEHR</a>
+                  <!-- Bei "href" den Dateipfad ändern-->
+                  <a data-aos="fade-zoom-in"class="btn rounded-0 px-5 red-light"href="Beitraege/Beitrag_3.html">MEHR</a>
                 </div>
               </div>
             </div>
@@ -212,7 +216,7 @@
   <div class="mask-svg-oben ">
     <div class="container transparent">
       <div class="row ">
-        <div class="col-sm-4 text-center align-items-center" id = "twitter">
+        <div class="col-lg-4 text-center align-items-center" id = "twitter">
           <h1>
             <span data-aos="fade-zoom-in" data-aos-duration="100" data-aos-delay="0">T</span>
             <span data-aos="fade-zoom-in" data-aos-duration="100" data-aos-delay="100">W</span>
@@ -229,11 +233,11 @@
                </h3>
             </div>
             <div class="panel-body">
-               <a class="twitter-timeline" data-theme= "dark" data-width="100%" href="https://twitter.com/keinenazisinLO?ref_src=twsrc%5Etfw">Tweets by keinenazisinLO</a>
+               <a class="twitter-timeline" data-lang="de" data-height="1000" data-theme="dark" href="https://twitter.com/keinenazisinLO?ref_src=twsrc%5Etfw">Tweets by keinenazisinLO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
-        <div class="col-sm-8" id="chronik">
+        <div class="col-lg-8" id="chronik">
           <h1>
             <span data-aos="fade-zoom-in" data-aos-duration="100" data-aos-delay="700">C</span>
             <span data-aos="fade-zoom-in" data-aos-duration="100" data-aos-delay="800">H</span>
@@ -244,143 +248,58 @@
             <span data-aos="fade-zoom-in" data-aos-duration="100" data-aos-delay="1300">K</span>
           </h1>
     			<ul class="timeline">
+            <!-- Chronik auf der Startseite-->
     				<li>
               <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
+                <!--Überschrift des Beitrags-->
                 <h3 >Kundgebung gegen die AfD</h3>
-      					<p class="float-right date">20. Juli, 2020</p>
+                <!--Datum-->
+      					<p class="date">14. April, 2021</p>
+                <!--Kurzer Teaser-Text-->
       					<p>Die AfD wieder einmal durch die Instrumentalisierung
                   einer Straftat ihre rassistischen Reden unter der Bevölkerung zu verbreiten.</p>
-                <!-- <p class="collapse" id="details1">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p> -->
-                <a href = "Beitraege/Beitrag_0.html">
+                  <!-- Beitragslink bei "href" ändern -->
+                <a href = "Beitraege/Beitrag_1.html">
                   Weiterlesen...
                 </a>
               </div>
     				</li>
+
             <li>
               <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-      					<p class="float-right date">20 Mai, 2021</p>
-      					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details2">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <!--Überschrift des Beitrags-->
+                <h3>Waffen- und Munitionsfund</h3>
+                <!--Datum-->
+      					<p class="date">14. April, 2021</p>
+                <!--Kurzer Teaser-Text-->
+      					<p>Nach einem Hilferuf aus einer privaten Wohnung auf der Georgstraße  fand die Polizei einen alkoholisierten Mann vor. </p>
+                  <!-- Beitragslink bei "href" ändern -->
+                <a href = "Beitraege/Beitrag_2.html">
                   Weiterlesen...
                 </a>
               </div>
     				</li>
+
+
             <li>
               <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details3">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <!--Überschrift des Beitrags-->
+                <h3>Naziaufmarsch am Chemnitzer Friedenstag</h3>
+                <!--Datum-->
+      					<p class="date">05. März 2022</p>
+                <!--Kurzer Teaser-Text-->
+      					<p>Am gestrigen Chemnitzer Friedenstag, an welchem sich die Bombardierung der Stadt jährte, 
+                  marschierten rechte Gruppierungen wie die...</p>
+                  <!-- Beitragslink bei "href" ändern -->
+                <a href = "Beitraege/Beitrag_2.html">
                   Weiterlesen...
                 </a>
               </div>
-            </li>
-            <li>
-              <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details4">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details4" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Weiterlesen...
-                </a>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details5">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details5" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Weiterlesen...
-                </a>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details6">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Weiterlesen...
-                </a>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details6">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details7" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Weiterlesen...
-                </a>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details7">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Weiterlesen...
-                </a>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
-                <h3 >New Web Design</h3>
-                <p class="float-right date">20 Mai, 2021</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="collapse" id="details8">
-                  Quisque scelerisque
-                    diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.
-                    Duis sagittis ligula in sodales vehicula....
-                </p>
-                <a data-toggle="collapse" href="#details8" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Weiterlesen...
-                </a>
-              </div>
-            </li>
+    				</li>
     			</ul>
+
+          
+
         </div>
       </div>
     </div>
@@ -398,7 +317,6 @@
 </main>
 
   <footer>
-
     <div class="" style="background-color: rgb(24, 24, 24)">
         <div class="container">
             <div class="row text-white text-center py-5" id="footer">
@@ -409,7 +327,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
     <!-- Modal -->
     <div class="modal fade " id="modalImpressum" tabindex="-1" role="dialog" aria-labelledby="modalImpressumLabel" aria-hidden="false">
         <div class="modal-dialog" role="document">
@@ -455,11 +372,27 @@
       });
     </script>
 
-
+    <!-- Cookie Modal Skript, damit es nur einmal aufgerufen wird -->
     <script>
-      $(document).ready(function(){
-          $("#myModal").modal('show');
+      $('#myModal').on('hidden.bs.modal', function (e) {
+      // set cookie
+      document.cookie = "showModalOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
       });
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+                if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+            }
+        return "";
+      }
+
+      // open modal only if cookie is not set
+      if ( getCookie('showModalOnlyOnce') !== 'true' ) {
+          $('#myModal').modal('show');
+      }
   </script>
 
 

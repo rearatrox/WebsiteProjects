@@ -13,7 +13,7 @@ $url_fehler = "Impressum.html"; //Zielseite, wenn E-Mail nicht gesendet werden k
 
 
 //Diese Felder werden nicht in der Mail stehen
-$ignore_fields = array();
+$ignore_fields = array('submit', 'AbsendenButton');
 
 
 
@@ -28,14 +28,14 @@ $monat = date("m");
 $time = date("H:i");
 
 //Erste Zeile unserer Email
-$msg = "Gesendet am $tag, den $n.$monat.$jahr - $time Uhr\n\n";
+$msg = ":: Gesendet am $tag, den $n.$monat.$jahr - $time Uhr ::\n\n";
 
 //Hier werden alle Eingabefelder abgefragt
 foreach($_POST as $name => $value) {
    if (in_array($name, $ignore_fields)) {
         continue; //Ignore Felder wird nicht in die Mail eingefügt
    }
-   $msg .= "$name: \n$value\n\n";
+   $msg .= "::: $name :::\n$value\n\n";
 }
 
 
@@ -56,8 +56,6 @@ if (!empty($mail_cc)) {
 
 //Email als UTF-8 senden
 $header .= "\nContent-type: text/plain; charset=utf-8";
-
-if(!empty($_POST['website'])) die();
 
 $mail_senden = mail($empfaenger,$betreff,$msg,$header);
 
