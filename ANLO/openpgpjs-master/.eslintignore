@@ -1,0 +1,4 @@
+dist
+test/lib/
+test/typescript/definitions.js
+docs

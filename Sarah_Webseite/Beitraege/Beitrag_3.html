@@ -38,54 +38,51 @@
   </head>
   <body>
 
-  <header>
-    <div class="mask-navbar">
+    <header>
       <!-- Navigationsleiste -->
-      <nav class="mask-navbar autohide farbeAnimiert navbar navbar-expand-lg navbar-light fixed-top schatten-navbar light" z-index="100">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/Antifalogo.svg" width="50" height="50" alt="">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse " id="navbarMain">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="../aktuelles.html">Aktuelles</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../projekte.html">Projekte</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#leistungen">Veranstaltungen</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#kontakt">Chronik</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#kontakt">Kontakt</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#faq">Spende</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#modalImpressum" data-toggle= "modal">Impressum</a>
-                  </li>
-              </ul>
-              <form id="search" method="get" action="../suchen.php" class="form-inline">
-                <label for="suchbegriff"></label>
-                <input name="q" class="form-control mb-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-          </div>
-      </nav>
-    </div>
-
+      <div class="mask-navbar"> 
+        <nav class="mask-navbar navbar navbar-expand-lg navbar-light fixed-top schatten-navbar light" z-index="100">
+            <a class="navbar-brand" href="index.html">
+              <img src="../img/Antifalogo.svg" width="50" height="50" alt="">
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse " id="navbarMain">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../aktuelles.html">Aktuelles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../veranstaltungen.html">Veranstaltungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../chronik.html">Chronik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../spende.html">Spende</a>
+                    </li>
+                    <li>
+  
+                    </li>
+                </ul>
+                <form id="search" method="get" action="suchen.php" class="form-inline">
+                  <label for="suchbegriff"></label>
+                  <input name="q" class="form-control mb-0 mr-sm-2" type="search" placeholder="Suchen..." aria-label="Search">
+                  <button id="suchbutton" class="btn btn-light" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+            </div>
+        </nav>
+      </div>
   </header>
+
   <main id="twitter-bg">
     <div class="transparent">
       <div class="container" id="willkommen" >
@@ -102,7 +99,7 @@
         </div>
         <div class="row  align-items-center">
         <!-- Hier fängt die Beitragspalte an -->
-          <div class="col-sm-12 bild_beitrag">
+          <div class="col-sm-12 ">
             <!-- ======================================================================================= -->
             <!-- Hier wird das Foto hinzugefügt am Anfang des Beitrags-->
             <!-- Hier müsst ihr nur den Bildpfad ändern -->
@@ -140,8 +137,6 @@
               welche sich an den Protesten beteiligt haben! 
               Wir überlassen die Stadt nicht den Nazis!
             </p>
-
-
             <!-- Ende des Beitragtextes -->
             <!-- Beginn der Hashtags zum Suchen -->
             <i><p class = text-muted style="padding-left: 0">
@@ -169,7 +164,6 @@
             <a data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light BeitragButtonRechts pc" href="Beitrag_3.html">Nächster Beitrag</a>
             <a data-aos="fade-zoom-in"class="text-center btn rounded-0 px-5 red-light BeitragButtonRechts mobile" href="Beitrag_3.html">></a>
             <!-- ======================================================================================= -->
-
           </div>
         </div>
       </div>

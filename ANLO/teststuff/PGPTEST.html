@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- AOS Plugin -->
+    <link rel="stylesheet" href="../aos plugin/css/styles.css" />
+    <link rel="stylesheet" href="../aos plugin/css/aos.css" />
+
+    <!-- CSS Datei -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openpgp/4.10.10/openpgp.js" integrity="sha512-+qeUc5l200Kp5Ofgj/tTGzR3V6HFQYyiPA65ku5hfxPPScWE2IGsTBqOEqMRAyx1R+Ar/CIux7Sg4mTilezgQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openpgp/4.10.10/openpgp.min.js" integrity="sha512-JqTHXuQmit4aMscxUcxICZlTL/71uKe+zp+T1KrYLErbc++MulJmfcoK35eAoC8QHmhFSSLfayem93XTq2PV7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <textarea name="text" id="input" class="contact-form" style="width: 300px; height: 140px;"></textarea><br>
+      <button id="button" class="btn btn-warning" onclick="encryptMessage()">Encrypt</button>
+
+
+    <div id="pubkey" style="display:none;">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.1.0
+Comment: https://openpgpjs.org
+
+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
+UDRi70TxBHC4xa/tcBKOCA==
+=stYC
+-----END PGP PUBLIC KEY BLOCK-----
+</div>
+
+
+    <script language="javascript" type="text/javascript">
+      const encryptMessage  = async() => {
+        var message = document.getElementById('input').value;
+        if(window.crypto.getRandomValues){
+          if(message != ""){
+            const publicKeyString = document.getElementById("pubkey").innerHTML;
+
+            var options = {
+              message: openpgp.message.fromText(message),
+              publicKeys: (await openpgp.key.readArmored(publicKeyString)).keys
+            };
+
+
+            openpgp.encrypt(options).then(ciphertext => {
+              var encrypted = ciphertext.data;
+              document.getElementById('input').value = encrypted;
+
+              // Verschlüsselte Daten in das Textfeld schreiben
+            })
+          }
+        }
+        else{
+          window.alert("This browser does not support basic cryptography!");
+        }
+      }
+    </script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- AOS-Plugin Initialisierung -->
+    <script src="../aos plugin/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sin",
+        duration: "750"
+      });
+    </script>
+  </body>
+</html>
