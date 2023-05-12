@@ -9,16 +9,19 @@
 
 .show {
   display: block;
+  padding-bottom: 2rem;
 }
 
 .hide {
   display: none;
+  padding: 0;
 }
 
 .event {
   color: #fff; }
-  .event:after {
-    background: var(--orange); }
+
+.event:after {
+  background: #ed1c24; }
 
 
 :root {
@@ -8347,11 +8350,12 @@ tbody td:active {
   -ms-transform: scale(0.7);
   transform: scale(0.7); }
 
+  /*
 #today {
   color: #fff; }
   #today:after {
     background: #e13a9d; }
-
+*/
 #disabled {
   cursor: default;
   background: #fff; }
