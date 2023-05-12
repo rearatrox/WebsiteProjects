@@ -290,7 +290,9 @@ margin-top: 1em;
 
 /* === Background First Look*/
 #intro {
-  background: url("img/Titelbild.png");
+  background-image: url("img/Titelbild.png");
+  background-image: image-set(
+    url("img/Titelbild.avif") 1x);
   height:100vh;
   background-size: cover;
   backdrop-filter: blur(5px);
