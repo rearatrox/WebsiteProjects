@@ -291,8 +291,6 @@ margin-top: 1em;
 /* === Background First Look*/
 #intro {
   background-image: url("img/Titelbild.png");
-  background-image: image-set(
-    url("img/Titelbild.avif") 1x);
   height:100vh;
   background-size: cover;
   backdrop-filter: blur(5px);
@@ -321,8 +319,8 @@ margin-top: 1em;
 .mask-svg-unten {
  /*background-image: url("img/Wave_grau_unten.svg");
   background-size: cover;*/
-  background-image: -webkit-linear-gradient(bottom, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
-  background-image: linear-gradient(bottom, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
+  /*background-image: -webkit-linear-gradient(bottom, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(bottom, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);*/
 
 }
 
@@ -335,8 +333,8 @@ margin-top: 1em;
 .mask-svg-oben {
  /*background-image: url("img/Wave_grau.svg");
   background-size: cover;*/
-  background-image: -webkit-linear-gradient(top, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
-  background-image: linear-gradient(top, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
+  /*background-image: -webkit-linear-gradient(top, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(top, #c8c8c8, #c8c8c8 50%, transparent 50%, transparent 100%);*/
 }
 
 
@@ -470,7 +468,7 @@ ul.timeline {
 }
 ul.timeline:before {
     content: ' ';
-    background: #d4d9df;
+    background: rgba(33,37,41, 0.7);
     display: inline-block;
     position: absolute;
     left: 29px;

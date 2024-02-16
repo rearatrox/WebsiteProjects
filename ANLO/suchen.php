@@ -1,5 +1,5 @@
 <?php
-include("suchscript/wdw_suche/search_config.php");
+include("wdw_suche/search_config.php");
 ?>
 
 <!doctype html>
@@ -80,7 +80,7 @@ include("suchscript/wdw_suche/search_config.php");
       <div class="container">
         <div class="row text-center align-items-center">
           <div class="col-sm-12">
-            <div id="output"><?php include("suchscript/wdw_suche/search.php");?></div>
+            <div id="output"><?php include("wdw_suche/search.php");?></div>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@ include("suchscript/wdw_suche/search_config.php");
 
 
 
-    <script src="suchscript/wdw_suche/wdw_suche.js" defer></script>
+    <script src="wdw_suche/wdw_suche.js" defer></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

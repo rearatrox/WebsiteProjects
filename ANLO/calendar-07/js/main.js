@@ -67,21 +67,20 @@
         var arr_eventDaysDate = [];
 
         for (var i = 0; i < arr_eventDaysClass.length; i++) {
-            console.log(arr_eventDaysClass[i]);
-            console.log(arr_eventDaysClass[i].classList[1]);
+            //console.log(arr_eventDaysClass[i]);
+            //console.log(arr_eventDaysClass[i].classList[1]);
             arr_eventDays.push(arr_eventDaysClass[i].classList[1]);
         }
-        console.log(arr_eventDaysClass);
-        console.log(arr_eventDays);
-        //var arr_eventDays_classlist = Array.from(eventDays_classlist);
+        //console.log(arr_eventDaysClass);
+        //console.log(arr_eventDays);
 
         for (var i = 0; i < arr_eventDays.length; i++) {
             arr_eventDaysDate.push(new Date(arr_eventDays[i].replace(
                 /(\d\d\d\d)(\d\d)(\d\d)/, '$1-$2-$3')));
         }
         var eventDay = arr_eventDaysDate[0];
-        console.log(arr_eventDaysDate);
-
+        //console.log("Arr_eventDaysDate: ", arr_eventDaysDate);
+		//console.log("Arr_eventDaysDate, Element 0, getDate(): ", arr_eventDaysDate[0].getDate());
         for(var j = 0; j < 42; j++) {
 
             if(days[j].innerHTML === ""){
@@ -97,23 +96,13 @@
 
             for(var k = 0; k < arr_eventDaysDate.length; k++) {
                 if(j === arr_eventDaysDate[k].getDate() + startDay - 1){
-                    if((this.options && (month === setDate.getMonth()) && (year === setDate.getFullYear())) || (!this.options && (month === today.getMonth())&&(year===today.getFullYear()))){
-                        this.drawHeader(day);
+                    if((this.options && (month === arr_eventDaysDate[k].getMonth()) && (year === arr_eventDaysDate[k].getFullYear())) || (!this.options && (month === arr_eventDaysDate[k].getMonth())&&(year===arr_eventDaysDate[k].getFullYear()))){
+                        this.drawHeader(arr_eventDaysDate[k].getDate());
                         days[j].className = "event";
                     }
                 }
-            }
-
-            /*if(selectedDay){
-                if((j === selectedDay.getDate() + startDay - 1)&&(month === selectedDay.getMonth())&&(year === selectedDay.getFullYear())){
-                    days[j].className = "selected";
-                    this.drawHeader(selectedDay.getDate());
-                }
-            }*/
-            
+            }    
         }
-
-
     };
     
     Calendar.prototype.clickDay = function(o) {
@@ -129,7 +118,7 @@
         var selectedDayClassName = selectedDay.toISOString();
         selectedDayClassName = selectedDayClassName.substring(0,selectedDayClassName.lastIndexOf('T')).replace(/\-/gm,"");
         selectedDayClassName = parseInt(selectedDayClassName, 10) + 1;
-        console.log("Geklicktes Datum: " + selectedDayClassName);
+        //console.log("Geklicktes Datum: " + selectedDayClassName);
         this.drawHeader(o.innerHTML);
         this.setCookie('selected_day', 1);
         var beitrag = document.getElementsByClassName(selectedDayClassName);
@@ -138,7 +127,7 @@
         var beitraegeMitShow = document.getElementsByClassName("show");
         var arr_beitraegeMitShow = Array.from(beitraegeMitShow);
 
-        console.log(beitrag);
+        //console.log(beitrag);
         if(beitrag.length == 0){
             arr_beitraegeMitShow.forEach(function(element) {
                element.classList.remove("show");
